@@ -1,29 +1,36 @@
 # HelloWord
 
+show "Hello world" via graphQL
 
-🚩 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for start using it.
+## 🚩 Getting Started
+_These instructions will get you a copy of the project up and running on your local machine for start using it._
 
 Installing
 A step by step series of examples that tell you how to get a development environment running.
 
 Installing dependencies
 
-npm install
+```npm install```
 Starting on local
 
-npm start
-🖇 Dependencies
-They are in the package.json file.
+```npm start```
+### 🖇 Dependencies
+They are in the ```package.json``` file.
 
 These are the project dependencies:
-
+```
 "dependencies": {
-  "clone-deep": "^4.0.1",
-  "react": "^16.12.0",
-  "react-dom": "^16.12.0",
-  "react-scripts": "^3.3.1"
+    "babel-polyfill": "^6.26.0",
+    "graphql-yoga": "^1.18.3",
+    "request": "^2.88.0"
+  }
+ ```
 }
-🛠 Built With
+## 🛠 Built With
 ReactJS - The frontend framework used
 NPM - Package manager
+* [ReactJS](https://reactjs.org/) - The frontend framework used
+* [NPM](https://www.npmjs.com/) - Package manager
+
+
+
