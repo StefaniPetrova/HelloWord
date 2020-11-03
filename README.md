@@ -11,9 +11,11 @@ A step by step series of examples that tell you how to get a development environ
 _Installing dependencies_
 
 ```npm install```
+
 _Starting on local_
 
 ```npm start```
+
 ### 🖇 Dependencies
 They are in the ```package.json``` file.
 
