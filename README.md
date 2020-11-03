@@ -29,8 +29,6 @@ These are the project dependencies:
  ```
  
 ## 🛠 Built With
-ReactJS - The frontend framework used
-NPM - Package manager
 * [ReactJS](https://reactjs.org/) - The frontend framework used
 * [NPM](https://www.npmjs.com/) - Package manager
 
