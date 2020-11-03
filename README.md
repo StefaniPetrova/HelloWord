@@ -8,10 +8,10 @@ _These instructions will get you a copy of the project up and running on your lo
 Installing
 A step by step series of examples that tell you how to get a development environment running.
 
-Installing dependencies
+_Installing dependencies_
 
 ```npm install```
-Starting on local
+_Starting on local_
 
 ```npm start```
 ### 🖇 Dependencies
@@ -25,7 +25,7 @@ These are the project dependencies:
     "request": "^2.88.0"
   }
  ```
-}
+ 
 ## 🛠 Built With
 ReactJS - The frontend framework used
 NPM - Package manager
