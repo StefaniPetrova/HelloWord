@@ -1,32 +1,35 @@
-import {MongoClient} from 'mongodb';
-import {GraphQLServer} from "graphql-yoga";
+import {GraphQLServer} from 'graphql-yoga';
+//import MongoClient from 'mongodb';
 import {Query} from "./resolvers/Query.js";
-import "babel-polyfill";
+import 'babel-polyfill';
 
-const url = "mongodb+srv://username:password99@thecluster-mzag5.gcp.mongodb.net/test";
-
-const dbConnect = async (url) => {
-    const client = new MongoClient(url, {useNewUrlParser: true, useUnifiedTopology: true});
+  
+/*const dbConnect = async ()=>{
+    const uri = "mongodb+srv://stefani:contraseÃ±a@scluster-jlu1s.gcp.mongodb.net/test?retryWrites=true&w=majority";
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();
     return client;
-}
+}*/
 
-const runGraphQLServer = (context) => {
+const startGraphql  = () => {
     const resolvers = { 
         Query,
-    }
-    const server = new GraphQLServer({typeDefs : "./src/schema.graphql", resolvers, context});
-    server.start(() => console.log("Server listening"));
-}
+    };
 
-const runApp = async () => {
-    const client = await dbConnect(url);
-    try {
-        runGraphQLServer({client});
-    } catch(e) {
-        console.error(e);
-        client.close();
+    //const context = {client};
+    const server = new GraphQLServer({typeDefs : "src/schema.graphql", resolvers});
+    server.start(() => console.log("Server listening"));
+};
+const runApp = async() =>{
+    //const client = await dbConnect();
+    try{
+       
+        //console.log("hola mundo");
+        startGraphql();
+    }catch(e){
+       // client.close();
+        console.log(e);
     }
-}
+};
 
 runApp();
